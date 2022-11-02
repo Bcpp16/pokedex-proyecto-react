@@ -1,18 +1,18 @@
 .logo{
-    margin: 50px 100px;
+    margin: 5rem 10rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .img-logo{
-    width: 40px;
+    width: 4rem;
 }
 
 .txt-logo{
     font-weight: 600;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .container-search{
@@ -20,13 +20,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom:5rem;
+
 }
 
 
 .search{
-    width: 500px;
-    height: 20px;
-    padding: 10px;
-    border-radius: 10px;
+    width: 50rem;
+    height: 3.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
     border: 1px solid #1e2e3e;
 }

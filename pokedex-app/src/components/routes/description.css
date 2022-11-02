@@ -1,8 +1,8 @@
 .cont {
-    height: 640px;
-    width: 360px;
+    height: 64rem;
+    width: 36rem;
     
-    border-radius: 10px;
+    border-radius: 1rem;
   }
   .head {
     display: flex;
@@ -10,15 +10,15 @@
     align-items: center;
   }
   .data {
-    background-color: #fff;
-    border-radius: 10px;
+    /* background-color: #fff; */
+    border-radius: 1rem;
     margin: 5px;
     justify-content: center;
   }
   .stats {
     display: flex;
     justify-content: space-around;
-    background-color: #fff;
+    /* background-color: #fff; */
   }
   .type {
     display: flex;
@@ -28,11 +28,12 @@
   .element {
     border: none;
     background-color: #f57d31;
-    padding: 6px 20px;
-    border-radius: 30px;
+    padding: 0.6rem 2rem;
+    border-radius: 3rem;
     color: #fff;
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   h3 {
     text-align: center;
   }
+  

@@ -37,7 +37,7 @@ function Header({showData, dataDefault, listPokemones}) {
         placeholder="Search bar"
         onChange={onChangeInput}
         />
-        <p>Look for the robots. Please use capital letters at the beginning.</p>
+       
       </div>
     </div>
     </div>

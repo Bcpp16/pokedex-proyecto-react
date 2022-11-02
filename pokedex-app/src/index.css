@@ -24,12 +24,20 @@
 
 }
 
+html{
+  font-size: 62.5%;
+}
+*{
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;
+}
 
 body{
   font-family: 'Poppins', sans-serif;
   background: hsla(210, 35%, 18%, 1);
   background: linear-gradient(90deg, hsla(210, 35%, 18%, 1) 0%, hsla(209, 51%, 8%, 1) 100%);
-
   color: #fff;
+  font-size: 16px;
 
 }
