@@ -1,0 +1,38 @@
+.cont {
+    height: 640px;
+    width: 360px;
+    
+    border-radius: 10px;
+  }
+  .head {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .data {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 5px;
+    justify-content: center;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+  }
+  .type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .element {
+    border: none;
+    background-color: #f57d31;
+    padding: 6px 20px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+  }
+  h3 {
+    text-align: center;
+  }
