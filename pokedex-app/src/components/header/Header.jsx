@@ -1,4 +1,5 @@
 import React from 'react'
+import './header.css'
 
 
 function Header({showData, dataDefault, listPokemones}) {
@@ -25,16 +26,19 @@ function Header({showData, dataDefault, listPokemones}) {
 
   return (
     <div>
-      <div>
-        <p>LOGO</p>
+      <div className='logo'>
+        <img className='img-logo' src="/public/assets/Pokebola.png" />
+        <p className='txt-logo'>Pokedex</p>
       </div>
-    <div >
+    <div>
+      <div className='container-search'>
       <input 
         className="search"
         placeholder="Search bar"
         onChange={onChangeInput}
         />
         <p>Look for the robots. Please use capital letters at the beginning.</p>
+      </div>
     </div>
     </div>
   )

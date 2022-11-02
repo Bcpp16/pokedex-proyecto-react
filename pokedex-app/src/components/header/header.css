@@ -1,0 +1,32 @@
+.logo{
+    margin: 50px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-logo{
+    width: 40px;
+}
+
+.txt-logo{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.container-search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search{
+    width: 500px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #1e2e3e;
+}

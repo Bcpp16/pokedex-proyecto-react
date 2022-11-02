@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
 :root {
   /* colors pokemons */
   --rock:  #b69e31;
@@ -19,12 +22,14 @@
   --fighting: #c12239;
   --normal:#aaa67f;
 
+}
 
 
+body{
+  font-family: 'Poppins', sans-serif;
+  background: hsla(210, 35%, 18%, 1);
+  background: linear-gradient(90deg, hsla(210, 35%, 18%, 1) 0%, hsla(209, 51%, 8%, 1) 100%);
 
-
-
-
-
+  color: #fff;
 
 }
