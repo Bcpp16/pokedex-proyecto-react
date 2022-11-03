@@ -14,7 +14,6 @@ function Main({ listPokemones }) {
                 <div className="st-card">
                   <div className="id">{`#${pokemon.id}`}</div>
                   <img className="img-Poke" src={pokemon.image} />
-
                   <div
                     className="bg-color"
                     style={{ backgroundColor: pokemon.color }}

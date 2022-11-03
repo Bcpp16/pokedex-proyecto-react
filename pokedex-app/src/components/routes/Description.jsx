@@ -13,33 +13,26 @@ function Description() {
 
 
   return (
-    <div style={{backgroundColor: pokemon.color}}>
-      <div>
-        <i>icono</i>
-        <h2>{pokemon.name}</h2>
-        <span>{pokemon.id}</span>
+
+    <div className='container-descr' style={{backgroundImage: `linear-gradient(to right, ${pokemon.color}, ${pokemon.bgColor})`}}>
+
+    <div className='cont-second'>
+
+      <div className='cont-img'>
+        <img className='img-big' src={`../${pokemon.image}`} alt="pokemon" />
       </div>
-      <div>
-        <img  src={`../${pokemon.image}`} alt="pokemon" />
-        <div>
-          <div>{pokemon.weight}</div>
-          <div>{pokemon.height}</div>
-          <div>{pokemon.moves}</div>
-        </div>
-        <h3>About</h3>
-        <p>{pokemon.description}</p>
-        <h3>Base Stats</h3>
-      {/* <div className='progressBar'>
-      <ProgressBar  style={{backgroundColor: pokemon.color}}data-percentage='200' now={pokemon.baseStats.HP} />
-      <ProgressBar variant="info" now={pokemon.baseStats.ATK} />
-      <ProgressBar variant="warning" now={pokemon.baseStats.DEF} />
-      <ProgressBar variant="danger" now={pokemon.baseStats.SATK} />
-      <ProgressBar variant="danger" now={pokemon.baseStats.SDEF} />
-      <ProgressBar variant="danger" now={pokemon.baseStats.SPD} />
-      
-    </div> */}
+
+      <div className='cont-basic'>
+        <span className='id-desc'>{ `# ${pokemon.id}`}</span>
+        <div className='type1'>{pokemon.element.type1}</div>
+        <div>{pokemon.element.type2}</div>
+        <h2 className='title-name'>{pokemon.name}</h2>
+        <p className='txt-desc'>{pokemon.description}</p>
       </div>
+
     </div>
+    </div>
+    
 
     
   )

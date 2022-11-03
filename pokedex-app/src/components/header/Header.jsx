@@ -28,7 +28,6 @@ function Header({ showData, dataDefault, listPokemones, orderAlfa, orderId, stat
   
   return (
     <div className="cont1">
-      <button onClick={state ? orderAlfa : orderId }>Ordenar</button>
 
       <div className="cont-header">
         <div className="cont-logo">
@@ -41,6 +40,7 @@ function Header({ showData, dataDefault, listPokemones, orderAlfa, orderId, stat
             placeholder="Buscar"
             onChange={onChangeInput}
           />
+          <button className='btn-order' onClick={state ? orderAlfa : orderId }>AZ ↓</button>
         </div>
       </div>
     </div>

@@ -8,14 +8,15 @@ let pokemones = [
     element: {
       type1: "Grass",
       type2: "Poison",
+      color2: "",
     },
     weight: "6,9 kg",
     height: "0.7 m",
     moves: "Chlorophyll Overgrow",
     color: '#74cb48',
-    // bgColor: 'linear-gradient(135deg, #74cb48 0%, #55a32e 100%)',
+    bgColor: '#019CAD',
     description:
-      "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
+      "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger. Morbi maximus diam dolor, ac placerat ante mattis eu. Pellentesque dignissim leo non aliquam hendrerit. Donec quis enim vitae lacus varius semper non in lacus. Morbi vehicula mi a neque faucibus, quis rutrum felis efficitur. Curabitur ac tellus id lorem sollicitudin ullamcorper. Mauris ultrices sodales pulvinar.",
     baseStats: {
       HP: "045",
       ATK: "049",
