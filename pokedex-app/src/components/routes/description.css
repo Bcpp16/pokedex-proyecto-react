@@ -27,11 +27,20 @@
   font-weight: 600;
   font-size: 2.5rem;
 }
-
-.type1{
-  width: 6rem;
+.cont-type{
+  display: flex;
+  gap: 2rem;
+}
+.type2{
+  width: 8rem;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 1rem;
   text-align: center;
-  padding: 1rem;
+
+}
+.type1{
+  width: 8rem;
+  text-align: center;
   border-radius: 1rem;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
   backdrop-filter: blur( 10px );
@@ -48,4 +57,19 @@
 
 .img-big{
   filter: drop-shadow(0px 20px 5px rgba(75, 75, 75, 0.3));
+}
+.btn-states{
+  width: 70%;
+  border-radius: 1rem;
+  border: 1px ;
+ 
+  color: #fff;
+ 
+}
+.btn-states:hover{
+ 
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 0.5);
+  transition: all 0.2s ease;
+  pointer-events: all;
+  
 }

@@ -8,12 +8,12 @@ let pokemones = [
     element: {
       type1: "Grass",
       type2: "Poison",
-      color2: "",
+      color2: "var(--poison)",
     },
     weight: "6,9 kg",
     height: "0.7 m",
     moves: "Chlorophyll Overgrow",
-    color: '#74cb48',
+    color: 'var(--grass)',
     bgColor: '#019CAD',
     description:
       "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger. Morbi maximus diam dolor, ac placerat ante mattis eu. Pellentesque dignissim leo non aliquam hendrerit. Donec quis enim vitae lacus varius semper non in lacus. Morbi vehicula mi a neque faucibus, quis rutrum felis efficitur. Curabitur ac tellus id lorem sollicitudin ullamcorper. Mauris ultrices sodales pulvinar.",
@@ -38,7 +38,7 @@ let pokemones = [
     weight: "8,5 kg",
     height: "0,6 m",
     moves: "Mega-Punch  Fire-Punch",
-    color: "#f57d31",
+    color: "var(--fire)",
     description:
       "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
     baseStats: {
@@ -62,7 +62,7 @@ let pokemones = [
     weight: "9 kg",
     height: "0,5 m",
     moves: "Torrent Rain-Dish",
-    color: "#6493eb",
+    color: "var(--water)",
     description:
       "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
     baseStats: {
@@ -83,11 +83,12 @@ let pokemones = [
     element: {
       type1: "Bug",
       type2: "Flying",
+      color2:"var(--flying)"
     },
     weight: "32,0 kg",
     height: "1,1 m",
     moves: "Compound-Eyes Tinted-Lens",
-    color: "#a7b723",
+    color: "var(--bug)",
     description:
       "In battle, it flaps its wings at great speed to release highly toxic dust into the air.",
     baseStats: {
@@ -110,7 +111,7 @@ let pokemones = [
     weight: "6,0 kg",
     height: "0,4 m",
     moves: "Mega-Punch  Pay-Day",
-    color: "#f9cf30",
+    color: "var(--electric)",
     description:
       "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
     baseStats: {
@@ -130,11 +131,12 @@ let pokemones = [
     element: {
       type1: "Ghost",
       type2: "Type",
+      color2:"var(--type)"
     },
     weight: "0,1 kg",
     height: "1,3 m",
     moves: "Levitate",
-    color: "#70559b",
+    color: "var(--ghost)",
     description:
       "Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison.",
     baseStats: {
@@ -157,7 +159,7 @@ let pokemones = [
     weight: "0,1 kg",
     height: "1,3 m",
     moves: "Limber Imposter",
-    color: "#aaa67f",
+    color: "var(--normal)",
     description:
       "It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes.",
     baseStats: {
@@ -180,7 +182,7 @@ let pokemones = [
     weight: "4,0 kg",
     height: "0,4 m",
     moves: "Synchronize",
-    color: "#fb5584",
+    color: "var(--psychic)",
     description:
       "When viewed through a microscope, this Pokémon’s short, fine, delicate hair can be seen.",
     baseStats: {
@@ -201,11 +203,12 @@ let pokemones = [
     element: {
       type1: "Steel",
       type2: "Rock",
+      color2:"var(--rock)"
     },
     weight: "0,1 kg",
     height: "1,3 m",
     moves: "Sturdy Rock-Head",
-    color: "#b7b9d0",
+    color: "var(--steel)",
     description:
       "It eats iron ore - and sometimes railroad tracks - to build up the steel armor that protects its body.",
     baseStats: {

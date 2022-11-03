@@ -1,12 +1,18 @@
 .cont1{
-    background-color: #001845;
-    box-shadow: 8px 4px 30px -14px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+    backdrop-filter: blur( 5px );
+    border-bottom: 2px solid rgba(25, 31, 111, 0.18);
+    box-shadow: 0 8px 20px 0 rgba(30, 37, 138, 0.1);
+    backdrop-filter: blur(30px);
+    height: 25rem;
+    margin-bottom: 10rem;
     position: relative;
     z-index: 1;
 }
 
 .cont-header{
     width: 80vw;
+    height: 25vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -29,7 +35,7 @@
 }
 
 .btn-order:hover{
-    box-shadow: 0 8px 10px 0 rgba(57, 67, 206, 0.5); 
+    box-shadow: 0 8px 10px 0 rgba(40, 45, 119, 0.5);
   }
 
 .cont-logo, 

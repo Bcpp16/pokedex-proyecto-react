@@ -36,6 +36,7 @@ function Header({ showData, dataDefault, listPokemones, orderAlfa, orderId, stat
         </div>
         <div className="cont-search">
          <input
+            type='search'
             className="search"
             placeholder="Buscar"
             onChange={onChangeInput}
