@@ -26,7 +26,7 @@ function Description() {
         <span className='id-desc'>{ `# ${pokemon.id}`}</span>
         <div className='type1'>{pokemon.element.type1}</div>
         <div>{pokemon.element.type2}</div>
-        <h2 className='title-name'>{pokemon.name}</h2>
+        <h2 className='title-name'>{pokemon.name.toLocaleUpperCase()}</h2>
         <p className='txt-desc'>{pokemon.description}</p>
       </div>
 
