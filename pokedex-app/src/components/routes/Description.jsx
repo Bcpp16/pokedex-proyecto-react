@@ -2,7 +2,7 @@ import {useParams} from 'react-router-dom';
 import React from 'react'
 import './description.css'
 import pokemones from '../../data';
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 
 function Description() {
 
@@ -13,8 +13,7 @@ function Description() {
 
 
   return (
-    <>
-    <div className="cont">
+    <div className="cont" style={{backgroundColor: pokemon.color}}>
       <div className="head">
         <i>icono</i>
         <h2>{pokemon.name}</h2>
@@ -33,7 +32,7 @@ function Description() {
         <h3>About</h3>
         <p>{pokemon.description}</p>
         <h3>Base Stats</h3>
-      <div className='progressBar'>
+      {/* <div className='progressBar'>
       <ProgressBar  style={{backgroundColor: pokemon.color}}data-percentage='200' now={pokemon.baseStats.HP} />
       <ProgressBar variant="info" now={pokemon.baseStats.ATK} />
       <ProgressBar variant="warning" now={pokemon.baseStats.DEF} />
@@ -41,11 +40,11 @@ function Description() {
       <ProgressBar variant="danger" now={pokemon.baseStats.SDEF} />
       <ProgressBar variant="danger" now={pokemon.baseStats.SPD} />
       
-    </div>
+    </div> */}
       </div>
     </div>
 
-    </>
+    
   )
 }
 

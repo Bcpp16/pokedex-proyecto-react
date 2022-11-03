@@ -13,6 +13,7 @@ let pokemones = [
     height: "0.7 m",
     moves: "Chlorophyll Overgrow",
     color: '#74cb48',
+    // bgColor: 'linear-gradient(135deg, #74cb48 0%, #55a32e 100%)',
     description:
       "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
     baseStats: {

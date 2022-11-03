@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from '../header/Header';
 import pokemones from '../../data'
 import Main from '../home/Main';
+import Stras from '../style/Stars';
 
 
 function App() {
@@ -52,7 +53,7 @@ function App() {
 
   return (
     <div className="App">
-
+      <Stras/>
       <Header 
       showData={showData}
       dataDefault={dataDefault}

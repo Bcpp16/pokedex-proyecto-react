@@ -5,7 +5,7 @@ import "./main.css";
 
 function Main({ listPokemones }) {
   return (
-    <>
+    <div className="container-main">
       <div className="container-card">
         {listPokemones.length ? (
           listPokemones.map((pokemon) => {
@@ -30,7 +30,7 @@ function Main({ listPokemones }) {
         )}
       </div>
       <div className="footer"></div>
-    </>
+    </div>
   );
 }
 
