@@ -1,40 +1,69 @@
-
-.container-card{
- width: 80vw;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-wrap: wrap;
- gap: 2rem;
- margin: 0 auto;
-
- 
-
+.container-card {
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
-.st-card{
-padding: 0.6rem;
- border-radius: 1rem;
- gap: 2rem;
- text-align: center;
+
+
+.st-card {
+  width: 30rem;
+  padding: 2rem;
+  border-radius: 3rem;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+  backdrop-filter: blur( 10px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+ /* .st-card::after {
+  content: "";
+  display: block;
+  width: 12.5rem;
+  height: 12.5rem;
+  background: rgba(0, 71, 202, 0.8);
+  filter: blur(128px);
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translateX(10%);
+  transition: all 0.8s ease 0s; 
+} */
+
+
+
+.st-card:hover{
+  box-shadow: 0 8px 30px 0 rgba( 31, 38, 135, 0.5 );  
+}
+
+.link{
+  text-decoration: none;
+}
+
+.id, .nombre{
+  color: #fff;
+  font-weight: 600; 
  
 }
-.id{
+
+.id {
   display: flex;
   justify-content: end;
 }
 
-.nombre{
+.bg-color{
+  border-radius: 3rem;
+  width: 100%;
+}
+
+.nombre {
   padding: 1rem;
   font-size: 2rem;
 }
 
-.back{
-  
-   border-radius: 1rem  1rem 0 0;
-    margin: 0.5rem;
-    /* box-shadow: 8px 4px 40px -14px rgba(0,0,0,0.52); */
-    
-
-    
-
+.footer{
+  margin-top: 10rem;
 }

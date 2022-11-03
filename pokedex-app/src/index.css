@@ -1,43 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 :root {
   /* colors pokemons */
-  --rock:  #b69e31;
+  --rock: #b69e31;
   --ghost: #70559b;
   --steel: #b7b9d0;
   --water: #6493eb;
   --grass: #74cb48;
-  --psychic: #fb5584; 
-  --ice:   #9ad6df; 
-  --dark:#75574c;
-  --fairy:#e69eac; 
-  --dragon:#7037ff;
-  --electric:#f9cf30;
-  --fire:#f57d31;
-  --bug :#a7b723;
+  --psychic: #fb5584;
+  --ice: #9ad6df;
+  --dark: #75574c;
+  --fairy: #e69eac;
+  --dragon: #7037ff;
+  --electric: #f9cf30;
+  --fire: #f57d31;
+  --bug: #a7b723;
   --ground: #dec16b;
   --poison: #a43e9e;
   --flying: #a891ec;
   --fighting: #c12239;
-  --normal:#aaa67f;
-
+  --normal: #aaa67f;
 }
 
-html{
-  font-size: 62.5%;
-}
-*{
+* {
   margin: 0;
   padding: 0;
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
-  background: hsla(210, 35%, 18%, 1);
-  background: linear-gradient(90deg, hsla(210, 35%, 18%, 1) 0%, hsla(209, 51%, 8%, 1) 100%);
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
   color: #fff;
+  background-color: #001233;
   font-size: 16px;
+
 
 }
