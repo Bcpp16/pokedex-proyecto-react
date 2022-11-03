@@ -13,7 +13,7 @@ function Main({ listPokemones }) {
               <Link to={`pokemon/${pokemon.id}`} className="link">
                 <div className="st-card">
                   <div className="id">{`#${pokemon.id}`}</div>
-                  <img src={pokemon.image} />
+                  <img className="img-Poke" src={pokemon.image} />
 
                   <div
                     className="bg-color"

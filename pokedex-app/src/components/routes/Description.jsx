@@ -13,21 +13,18 @@ function Description() {
 
 
   return (
-    <div className="cont" style={{backgroundColor: pokemon.color}}>
-      <div className="head">
+    <div style={{backgroundColor: pokemon.color}}>
+      <div>
         <i>icono</i>
         <h2>{pokemon.name}</h2>
         <span>{pokemon.id}</span>
       </div>
-      <div className="data">
+      <div>
         <img  src={`../${pokemon.image}`} alt="pokemon" />
-        <div className="stats">
+        <div>
           <div>{pokemon.weight}</div>
           <div>{pokemon.height}</div>
           <div>{pokemon.moves}</div>
-        </div>
-        <div className="type">
-          <div className='element'></div>
         </div>
         <h3>About</h3>
         <p>{pokemon.description}</p>

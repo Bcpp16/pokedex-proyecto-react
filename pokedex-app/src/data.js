@@ -4,7 +4,7 @@ let pokemones = [
     id: 1,
     name: "Bulbasaur",
     image: "assets/bulbasaur.png",
-    img: "https://img.imgur.com/zIlKl7x.png",
+    img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png",
     element: {
       type1: "Grass",
       type2: "Poison",
