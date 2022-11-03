@@ -7,6 +7,7 @@ import Main from '../home/Main';
 function App() {
 
   const [list, setList] = useState(pokemones);
+  const [button, setButton] = useState(true);
 
 
   const showData = (data) =>{
@@ -17,6 +18,37 @@ function App() {
     setList(pokemones);
   }
 
+  
+  const orderAlfa = () =>{
+    const result = [...list].sort(function (a, b) {
+    if (a.name > b.name) {
+      return 1;
+    }
+    if (a.name < b.name) {
+      return -1;
+    }
+    return 0;
+   })
+   showData(result);
+   setButton(false)
+  };
+
+
+  const orderId = () =>{
+    const result = [...list].sort(function (a, b) {
+    if (a.id > b.id) {
+      return 1;
+    }
+    if (a.id < b.id) {
+      return -1;
+    }
+    return 0;
+   })
+   showData(result);
+   setButton(true)
+  };
+
+  
 
   return (
     <div className="App">
@@ -25,6 +57,9 @@ function App() {
       showData={showData}
       dataDefault={dataDefault}
       listPokemones={list}
+      orderAlfa={orderAlfa}
+      orderId={orderId}
+      state={button}
       />
 
       <Main listPokemones={list}/>
