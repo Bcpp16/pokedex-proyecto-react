@@ -1,6 +1,6 @@
 .modal-content {
-  height: 40vh;
-  width: 120vw;
+  height: auto;
+  max-height: auto;
   background: rgba(41, 41, 41, 0.45) !important;
   /* box-shadow: 0 8px 32px 0 rgb(0, 0, 0); */
   backdrop-filter: blur(12px);
@@ -20,10 +20,50 @@
 
 .cont-Info {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 6rem;
+}
+.cont-Stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+  gap: 0.5rem;
+}
+.img-Modal {
+  position: absolute;
+  bottom: 200px;
 }
 
 .progress {
   width: 100%;
   border: none;
   border-radius: 10px;
+}
+
+.cont-Data {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cont-Data span {
+  font-weight: bold;
+}
+.weight-height {
+  display: flex;
+  gap: 4rem;
+}
+.moves {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
