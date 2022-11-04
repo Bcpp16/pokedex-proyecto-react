@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import Header from '../header/Header';
 import pokemones from '../../data'
-import Main from '../home/Main';
+import Main from '../main/Main';
 import Stras from '../style/Stars';
+
 
 
 function App() {

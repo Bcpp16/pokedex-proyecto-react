@@ -34,7 +34,7 @@ function Description() {
       
         <h2 className='title-name'>{pokemon.name.toLocaleUpperCase()}</h2>
         <p className='txt-desc'>{pokemon.description}</p>
-        <button style={{backgroundColor:pokemon.color}} className='btn-states'>Base states</button>
+        <button style={{color:pokemon.color}} className='btn-states'>Base states</button>
       </div>
 
     </div>
