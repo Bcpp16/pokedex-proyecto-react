@@ -59,11 +59,28 @@
 }
 .weight-height {
   display: flex;
-  gap: 4rem;
+  justify-content: space-around;
 }
 .moves {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+@media (max-width: 400px) {
+  .modal-Cont {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cont-Info {
+    width: 100%;
+  }
+  .cont-Stats {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .img-Modal {
+    top: -130px;
+  }
 }
