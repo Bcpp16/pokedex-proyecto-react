@@ -89,10 +89,10 @@
 .btn-states {
   width: 70%;
   border-radius: 1rem;
-  border: 1px;
-  background-color: #fff;
   padding: 1rem;
   font-weight: 500;
+  border: none;
+  font-size: 18px;
 }
 
 .btn-states:hover {

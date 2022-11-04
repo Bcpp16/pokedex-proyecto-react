@@ -1,5 +1,29 @@
-.container{
-    width: 80vw;
-    height: 40vh;
-   background-color: aqua;
+.modal-content {
+  height: 40vh;
+  width: 120vw;
+  background: rgba(41, 41, 41, 0.45) !important;
+  /* box-shadow: 0 8px 32px 0 rgb(0, 0, 0); */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.modal-Cont {
+  width: 100%;
+  display: flex;
+}
+.cont-Stats {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.cont-Info {
+  width: 50%;
+}
+
+.progress {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
 }

@@ -52,7 +52,7 @@ function Description() {
           <button
             variant="primary"
             onClick={() => setModalShow(true)}
-            style={{ backgroundColor: pokemon.color }}
+            style={{ color: pokemon.color }}
             className="btn-states"
           >
             Base states
