@@ -1,7 +1,7 @@
 
 let pokemones = [
   {
-    id: 1,
+    id: '001',
     name: "Bulbasaur",
     image: "assets/bulbasaur.png",
     img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png",
@@ -28,7 +28,7 @@ let pokemones = [
   },
 
   {
-    id: 4,
+    id: '004',
     name: "Charmander",
     image: "./assets/charmander.png",
     img: "https://img.imgur.com/sRtUahD.png",
@@ -39,6 +39,7 @@ let pokemones = [
     height: "0,6 m",
     moves: "Mega-Punch  Fire-Punch",
     color: "var(--fire)",
+    bgColor: "#FF6200",
     description:
       "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
     baseStats: {
@@ -52,7 +53,7 @@ let pokemones = [
   },
 
   {
-    id: 7,
+    id: '007',
     name: "Squirtle",
     image: "./assets/squirtle.png",
     img: "https://img.imgur.com/5HApPLW.png",
@@ -63,6 +64,7 @@ let pokemones = [
     height: "0,5 m",
     moves: "Torrent Rain-Dish",
     color: "var(--water)",
+    bgColor: '#025BFF',
     description:
       "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
     baseStats: {
@@ -76,7 +78,7 @@ let pokemones = [
   },
 
   {
-    id: 12,
+    id: '012',
     name: "Butterfree",
     image: "./assets/butterfree.png",
     img: "https://img.imgur.com/tIMv25O.png",
@@ -89,6 +91,7 @@ let pokemones = [
     height: "1,1 m",
     moves: "Compound-Eyes Tinted-Lens",
     color: "var(--bug)",
+    bgColor: '#758200',
     description:
       "In battle, it flaps its wings at great speed to release highly toxic dust into the air.",
     baseStats: {
@@ -101,7 +104,7 @@ let pokemones = [
     },
   },
   {
-    id: 25,
+    id: '025',
     name: "Pikachu",
     image: "./assets/pikachu.png",
     img: "https://img.imgur.com/p8XtXd9.png",
@@ -112,6 +115,7 @@ let pokemones = [
     height: "0,4 m",
     moves: "Mega-Punch  Pay-Day",
     color: "var(--electric)",
+    bgColor: '#E0AF00',
     description:
       "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
     baseStats: {
@@ -124,7 +128,7 @@ let pokemones = [
     },
   },
   {
-    id: 92,
+    id: '092',
     name: "Gastly",
     image: "./assets/gastly.png",
     img: "https://img.imgur.com/bBXfgmq.png",
@@ -137,6 +141,7 @@ let pokemones = [
     height: "1,3 m",
     moves: "Levitate",
     color: "var(--ghost)",
+    bgColor: '#593B89',
     description:
       "Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison.",
     baseStats: {
@@ -149,7 +154,7 @@ let pokemones = [
     },
   },
   {
-    id: 132,
+    id: '132',
     name: "Ditto",
     image: "./assets/ditto.png",
     img: "https://img.imgur.com/04drFjY.png",
@@ -160,6 +165,7 @@ let pokemones = [
     height: "1,3 m",
     moves: "Limber Imposter",
     color: "var(--normal)",
+    bgColor: '#8B865F',
     description:
       "It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes.",
     baseStats: {
@@ -172,7 +178,7 @@ let pokemones = [
     },
   },
   {
-    id: 152,
+    id: '152',
     name: "Mew",
     image: "./assets/mew.png",
     img: "https://img.imgur.com/HnAlPuB.png",
@@ -183,6 +189,7 @@ let pokemones = [
     height: "0,4 m",
     moves: "Synchronize",
     color: "var(--psychic)",
+    bgColor: '#FF1C5D',
     description:
       "When viewed through a microscope, this Pokémon’s short, fine, delicate hair can be seen.",
     baseStats: {
@@ -196,7 +203,7 @@ let pokemones = [
   },
 
   {
-    id: 304,
+    id: '304',
     name: "Aron",
     image: "./assets/aron.png",
     img: "https://img.imgur.com/LYLG8Ou.png",
@@ -209,6 +216,7 @@ let pokemones = [
     height: "1,3 m",
     moves: "Sturdy Rock-Head",
     color: "var(--steel)",
+    bgColor: '#8488B6',
     description:
       "It eats iron ore - and sometimes railroad tracks - to build up the steel armor that protects its body.",
     baseStats: {

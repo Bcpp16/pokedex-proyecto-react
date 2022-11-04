@@ -13,10 +13,7 @@ function Description() {
     });
 
     
-    
-   
-    
-
+  
   return (
 
     <div className='container-descr' style={{backgroundImage: `linear-gradient(to right, ${pokemon.color}, ${pokemon.bgColor})`}}>
@@ -28,7 +25,7 @@ function Description() {
       </div>
 
       <div className='cont-basic'>
-        <span  className='id-desc'>{ `# ${pokemon.id}`}</span>
+        <span  className='id-desc'>{ `# ${pokemon.id}` }</span>
         
         <div className='cont-type'>
         <div className='type1' style={{backgroundColor:pokemon.color}}>{pokemon.element.type1}</div> 
