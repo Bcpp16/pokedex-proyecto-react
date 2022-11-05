@@ -58,3 +58,9 @@
 .footer {
   margin-top: 10rem;
 }
+
+@media (max-width: 400px) {
+  .st-card {
+    position: relative;
+  }
+}
