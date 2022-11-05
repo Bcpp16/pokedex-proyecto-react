@@ -38,6 +38,22 @@
   position: absolute;
   bottom: 200px;
 }
+.prueba {
+  display: flex;
+}
+.close-Btn {
+  color: #fff;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  height: 4rem;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  justify-content: center;
+
+  background-color: transparent;
+  backdrop-filter: blur(px);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+}
 
 .progress {
   width: 100%;

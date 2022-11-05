@@ -52,6 +52,7 @@ function Description() {
           <button
             variant="primary"
             onClick={() => setModalShow(true)}
+            ba
             style={{ color: pokemon.color }}
             className="btn-states"
           >

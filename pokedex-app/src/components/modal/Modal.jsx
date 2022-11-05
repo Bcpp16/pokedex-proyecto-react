@@ -20,7 +20,12 @@ export default function ModalStates(props) {
       centered
       className="rounded-4"
     >
-      <Modal.Header className="border-0" closeButton></Modal.Header>
+      <Modal.Header className="border-0 ">
+        <div className="prueba"></div>
+        <button className="close-Btn" onClick={props.onHide}>
+          X
+        </button>
+      </Modal.Header>
       <Modal.Body>
         <div className="modal-Cont">
           <div className="cont-Info">

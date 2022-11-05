@@ -113,13 +113,14 @@
   }
   .container-descr {
     width: 100%;
-    height: 105vh;
+    height: 100vh;
   }
   .title-name {
     font-size: 4rem;
   }
   .btn-states {
     width: 100%;
+    background-color: #fff;
   }
   .cont-BackBtn {
     left: 10px;
