@@ -62,5 +62,6 @@
 @media (max-width: 400px) {
   .st-card {
     position: relative;
+    z-index: 100;
   }
 }
