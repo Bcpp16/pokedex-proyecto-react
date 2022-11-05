@@ -78,6 +78,7 @@ export default function ModalStates(props) {
               id="DEF"
               className="progress"
               max="200"
+              // backgroundColor={`../${pokemon.image}`}
               style={{ backgroundColor: pokemon.color }}
               value={pokemon.baseStats.DEF}
             ></progress>
