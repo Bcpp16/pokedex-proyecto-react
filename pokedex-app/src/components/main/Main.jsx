@@ -10,7 +10,7 @@ function Main({ listPokemones }) {
         {listPokemones.length ? (
           listPokemones.map((pokemon) => {
             return (
-              <Link to={`pokemon/${pokemon.id}`} className="link">
+              <Link to={`/pokemon/${pokemon.id}`} className="link">
                 <div className="st-card">
                   <div className="id">{`#${pokemon.id}`}</div>
                   <img className="img-Poke" src={pokemon.image} />

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import "./header.css";
+import { useNavigate } from "react-router-dom";
 
 function Header({
   showData,
@@ -11,6 +12,9 @@ function Header({
   state,
 }) {
   const [showButton, setShowButton] = useState(true);
+
+  const navigate = useNavigate();
+
   const onChangeInput = (e) => {
     let textInput = e.target.value.toLowerCase();
 
@@ -28,23 +32,20 @@ function Header({
 
     showData(filter);
   };
-  const onClickAlfa = () => {
-    if (state == true) {
+
+
+  const onClickOrder = () => {
+    if (showButton == true) {
       orderAlfa();
+      setShowButton(false)
+
     } else {
       orderId();
+      setShowButton(true);
     }
-    setShowButton(false);
   };
 
-  const onClickId = () => {
-    if (state == false) {
-      orderId();
-    } else {
-      orderAlfa();
-    }
-    setShowButton(true);
-  };
+
 
   return (   
     <div className="cont1">
@@ -52,6 +53,8 @@ function Header({
         <div className="cont-logo">
           <img className="img-logo" src="/public/assets/Pokebola.png" />
           <span className="txt-logo">Pokédex</span>
+
+          <button className="btn-home" onClick={() => navigate("/")}>Inicio</button>
         </div>
         <div className="cont-search">
           <input
@@ -61,19 +64,17 @@ function Header({
             onChange={onChangeInput}
           />
 
-          {showButton ? (
-            <button className="btn-order" onClick={onClickAlfa}>
-             # ↓ 
+          
+            <button className="btn-order" onClick={onClickOrder}> 
+            { 
+              showButton ? "#" : "AZ"
+            }
             </button>
-          ) : (
-            <button className="btn-order"  onClick={onClickId}>
-              AZ ↓
-            </button>
-          )}
+         
         </div>
       </div>
     </div>
   );
 }
-
+ 
 export default Header;
