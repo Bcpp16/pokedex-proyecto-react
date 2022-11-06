@@ -1,8 +1,8 @@
 import { Link, useParams } from "react-router-dom";
 import "./description.css";
-import pokemones from "../../data";
+import pokemones from "../../../data";
 import { useState } from "react";
-import ModalStates from "../modal/Modal";
+import ModalStates from "../../modal/Modal";
 import { HiArrowLeft } from "react-icons/hi2";
 
 function Description() {

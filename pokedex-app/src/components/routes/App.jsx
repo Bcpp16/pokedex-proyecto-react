@@ -5,19 +5,19 @@ import Main from "../main/Main";
 import Stras from "../background/Stars";
 
 function App() {
-  const [list, setList] = useState(pokemones);
-  const [button, setButton] = useState(true);
+  const [listPokemones, setListPokemones] = useState(pokemones);
+  const [orderButton, setOrderButton] = useState(true);
 
   const showData = (data) => {
-    setList(data);
+    setListPokemones(data);
   };
 
   const dataDefault = () => {
-    setList(pokemones);
+    setListPokemones(pokemones);
   };
 
   const orderAlfa = () => {
-    const result = [...list].sort(function (a, b) {
+    const result = [...listPokemones].sort(function (a, b) {
       if (a.name > b.name) {
         return 1;
       }
@@ -27,11 +27,11 @@ function App() {
       return 0;
     });
     showData(result);
-    setButton(false);
+    setOrderButton(false);
   };
 
   const orderId = () => {
-    const result = [...list].sort(function (a, b) {
+    const result = [...listPokemones].sort(function (a, b) {
       if (a.id > b.id) {
         return 1;
       }
@@ -41,7 +41,7 @@ function App() {
       return 0;
     });
     showData(result);
-    setButton(true);
+    setOrderButton(true);
   };
 
   return (
@@ -50,13 +50,13 @@ function App() {
       <Header
         showData={showData}
         dataDefault={dataDefault}
-        listPokemones={list}
+        listPokemones={listPokemones}
         orderAlfa={orderAlfa}
         orderId={orderId}
-        state={button}
+        stateButton={orderButton}
       />
 
-      <Main listPokemones={list} />
+      <Main listPokemones={listPokemones} />
     </div>
   );
 }

@@ -10,7 +10,7 @@ function Header({
   orderId,
   state,
 }) {
-  const [mostrarBoton, setMostrarBoton] = useState(true);
+  const [showButton, setShowButton] = useState(true);
   const onChangeInput = (e) => {
     let textInput = e.target.value.toLowerCase();
 
@@ -30,23 +30,23 @@ function Header({
   };
   const onClickAlfa = () => {
     if (state == true) {
-      orderAlfa;
+      orderAlfa();
     } else {
-      orderId;
+      orderId();
     }
-    setMostrarBoton(false);
+    setShowButton(false);
   };
 
   const onClickId = () => {
-    if (state == true) {
-      orderId;
+    if (state == false) {
+      orderId();
     } else {
-      orderAlfa;
+      orderAlfa();
     }
-    setMostrarBoton(true);
+    setShowButton(true);
   };
 
-  return (
+  return (   
     <div className="cont1">
       <div className="cont-header">
         <div className="cont-logo">
@@ -61,13 +61,13 @@ function Header({
             onChange={onChangeInput}
           />
 
-          {mostrarBoton ? (
+          {showButton ? (
             <button className="btn-order" onClick={onClickAlfa}>
-              AZ ↓
+             # ↓ 
             </button>
           ) : (
-            <button className="btn-order" onClick={state ? orderAlfa : orderId}>
-              # ↓
+            <button className="btn-order"  onClick={onClickId}>
+              AZ ↓
             </button>
           )}
         </div>

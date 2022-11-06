@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './components/routes/App'
-import Description from './components/routes/Description';
+import Description from './components/routes/detail/Description';
 import {
   createBrowserRouter,
   RouterProvider,
