@@ -18,9 +18,6 @@ function Description() {
   });
 
 
-
-  
-
   return (
     <div
       className="container-descr"
@@ -28,18 +25,16 @@ function Description() {
         backgroundImage: `linear-gradient(to right, ${pokemon.color}, ${pokemon.bgColor})`,
       }}
     >
-      {
-        pokemones[indexActual -1] && ( <Link to={`/pokemon/${pokemones[indexActual -1]?.id}`} className="link-coursel">
-        <HiChevronLeft />
-      </Link>) 
-      } 
+      <div className="link-c-1">
 
       {
-        pokemones[indexActual +1] && ( <Link to={`/pokemon/${pokemones[indexActual +1]?.id}`} className="link-coursel">
-        <HiChevronRight />
-      </Link>) 
+        pokemones[indexActual -1] ? ( <Link to={`/pokemon/${pokemones[indexActual -1]?.id}`} className="link-coursel">
+        <HiChevronLeft />
+      </Link>) : ( <Link to={`/pokemon/${pokemones[pokemones.length -1]?.id}`} className="link-coursel">
+        <HiChevronLeft />
+      </Link>)
       } 
-     
+      </div>
 
       <div className="cont-BackBtn">
         <Link to={"/"}>
@@ -81,6 +76,16 @@ function Description() {
           </button>
         </div>
         <ModalStates show={modalShow} onHide={() => setModalShow(false)} />
+      </div>
+      <div className="link-c-2">
+      {
+        pokemones[indexActual +1] ? ( <Link to={`/pokemon/${pokemones[indexActual +1]?.id}`} className="link-coursel">
+        <HiChevronRight />
+      </Link>) : ( <Link to={`/pokemon/${pokemones[0]?.id}`} className="link-coursel">
+        <HiChevronRight />
+      </Link>)
+      } 
+
       </div>
     </div>
   );

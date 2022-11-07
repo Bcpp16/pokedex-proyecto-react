@@ -1,3 +1,4 @@
+
 .container-descr {
   width: 100vw;
   height: 100vh;
@@ -6,6 +7,10 @@
 .link-coursel{
   font-size: 5rem;
   color: #fff;
+}
+
+.link-c-1{
+  position: relative;
 }
 
 .cont-second {
