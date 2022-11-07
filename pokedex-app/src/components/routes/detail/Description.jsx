@@ -9,26 +9,17 @@ function Description() {
   const [modalShow, setModalShow] = useState(false);
 
   const { id } = useParams();
-
   const pokemon = pokemones.find((element) => {
     return element.id == id;
   });
 
-  const pokemonIndice = pokemones.findIndex((element) => {
+  const indexActual = pokemones.findIndex((element) => {
     return element.id == id;
   });
 
-  console.log("indice es: " + pokemonIndice);
 
-  const handleBack = () =>{
-      return pokemonIndice -= 1;
-  }
 
-  console.log(handleBack);
-
-  const handleNext = () =>{
-    return pokemonIndice + 1;
-}
+  
 
   return (
     <div
@@ -37,14 +28,18 @@ function Description() {
         backgroundImage: `linear-gradient(to right, ${pokemon.color}, ${pokemon.bgColor})`,
       }}
     >
-      
-      <Link to={`/handleBack`} className="link-coursel">
+      {
+        pokemones[indexActual -1] && ( <Link to={`/pokemon/${pokemones[indexActual -1]?.id}`} className="link-coursel">
         <HiChevronLeft />
-      </Link>
+      </Link>) 
+      } 
 
-      <Link to={hanldeNext} className="link-coursel">
+      {
+        pokemones[indexActual +1] && ( <Link to={`/pokemon/${pokemones[indexActual +1]?.id}`} className="link-coursel">
         <HiChevronRight />
-      </Link>
+      </Link>) 
+      } 
+     
 
       <div className="cont-BackBtn">
         <Link to={"/"}>
