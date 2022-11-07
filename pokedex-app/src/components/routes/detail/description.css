@@ -3,6 +3,11 @@
   height: 100vh;
 }
 
+.link-coursel{
+  font-size: 5rem;
+  color: #fff;
+}
+
 .cont-second {
   width: 80vw;
   height: inherit;
