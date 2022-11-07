@@ -21,7 +21,7 @@ function Description() {
       }}
     >
       <div className="cont-BackBtn">
-        <Link to={"/app"}>
+        <Link to={"/"}>
           <button className="back-Btn">
             <HiArrowLeft /> VOLVER
           </button>
