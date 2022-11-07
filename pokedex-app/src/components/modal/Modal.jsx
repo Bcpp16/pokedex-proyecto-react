@@ -70,7 +70,6 @@ export default function ModalStates(props) {
               id="ATK"
               className="progress"
               max="200"
-              style={{ backgroundColor: pokemon.color }}
               value={pokemon.baseStats.ATK}
             ></progress>
             <label for="DEF">DEF</label>
@@ -78,8 +77,6 @@ export default function ModalStates(props) {
               id="DEF"
               className="progress"
               max="200"
-              // backgroundColor={`../${pokemon.image}`}
-              style={{ backgroundColor: pokemon.color }}
               value={pokemon.baseStats.DEF}
             ></progress>
             <label for="HP">HP</label>
@@ -87,7 +84,6 @@ export default function ModalStates(props) {
               id="HP"
               className="progress"
               max="200"
-              style={{ backgroundColor: pokemon.color }}
               value={pokemon.baseStats.HP}
             ></progress>
             <label for="SATK">SATK</label>
@@ -95,7 +91,6 @@ export default function ModalStates(props) {
               id="SATK"
               className="progress"
               max="200"
-              style={{ backgroundColor: pokemon.color }}
               value={pokemon.baseStats.SATK}
             ></progress>
             <label for="SDEF">SDEF</label>
@@ -103,7 +98,6 @@ export default function ModalStates(props) {
               id="SDEF"
               className="progress"
               max="200"
-              style={{ backgroundColor: pokemon.color }}
               value={pokemon.baseStats.SDEF}
             ></progress>
             <label for="SPD">SPD</label>
@@ -111,7 +105,6 @@ export default function ModalStates(props) {
               id="SPD"
               className="progress"
               max="200"
-              style={{ backgroundColor: pokemon.color }}
               value={pokemon.baseStats.SPD}
             ></progress>
           </div>
