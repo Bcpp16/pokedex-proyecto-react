@@ -3,15 +3,32 @@ import "./description.css";
 import pokemones from "../../../data";
 import { useState } from "react";
 import ModalStates from "../../modal/Modal";
-import { HiArrowLeft } from "react-icons/hi2";
+import { HiArrowLeft, HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
 function Description() {
   const [modalShow, setModalShow] = useState(false);
 
   const { id } = useParams();
+
   const pokemon = pokemones.find((element) => {
     return element.id == id;
   });
+
+  const pokemonIndice = pokemones.findIndex((element) => {
+    return element.id == id;
+  });
+
+  console.log("indice es: " + pokemonIndice);
+
+  const handleBack = () =>{
+      return pokemonIndice -= 1;
+  }
+
+  console.log(handleBack);
+
+  const handleNext = () =>{
+    return pokemonIndice + 1;
+}
 
   return (
     <div
@@ -20,6 +37,15 @@ function Description() {
         backgroundImage: `linear-gradient(to right, ${pokemon.color}, ${pokemon.bgColor})`,
       }}
     >
+      
+      <Link to={`/handleBack`} className="link-coursel">
+        <HiChevronLeft />
+      </Link>
+
+      <Link to={hanldeNext} className="link-coursel">
+        <HiChevronRight />
+      </Link>
+
       <div className="cont-BackBtn">
         <Link to={"/"}>
           <button className="back-Btn">
