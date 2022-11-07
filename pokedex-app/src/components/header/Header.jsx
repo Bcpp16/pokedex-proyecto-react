@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import "./header.css";
-import { useNavigate } from "react-router-dom";
+
 
 function Header({
   showData,
@@ -9,11 +9,10 @@ function Header({
   listPokemones,
   orderAlfa,
   orderId,
-  state,
 }) {
   const [showButton, setShowButton] = useState(true);
 
-  const navigate = useNavigate();
+  
 
   const onChangeInput = (e) => {
     let textInput = e.target.value.toLowerCase();
@@ -53,8 +52,7 @@ function Header({
         <div className="cont-logo">
           <img className="img-logo" src="/public/assets/Pokebola.png" />
           <span className="txt-logo">Pokédex</span>
-
-          <button className="btn-home" onClick={() => navigate("/")}>Inicio</button>
+          
         </div>
         <div className="cont-search">
           <input
@@ -64,7 +62,7 @@ function Header({
             onChange={onChangeInput}
           />
 
-          
+    
             <button className="btn-order" onClick={onClickOrder}> 
             { 
               showButton ? "#" : "AZ"
