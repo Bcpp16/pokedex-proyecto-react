@@ -6,7 +6,6 @@
   -webkit-backdrop-filter: blur(12px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  
 }
 .modal-Cont {
   width: 100%;
@@ -17,7 +16,6 @@
   flex-direction: column;
   width: 60%;
 }
-
 
 .cont-Info {
   width: 40%;
@@ -39,7 +37,7 @@
   position: absolute;
   bottom: 200px;
 }
-.prueba {
+.container-btn-close {
   display: flex;
 }
 .close-Btn {
@@ -56,16 +54,14 @@
   border: 2px solid rgba(255, 255, 255, 0.18);
 }
 
-
- .progress {
+.progress {
   width: 100%;
   border: none;
   border-radius: 1rem;
   box-shadow: none;
 }
 
-
- .progress::-webkit-progress-bar {
+.progress::-webkit-progress-bar {
   border: none;
   backdrop-filter: blur(10px);
   background: rgb(85, 85, 85) !important;
@@ -75,18 +71,15 @@
   background-color: #00d0ff !important;
 }
 
-
-
-.progress {
+.progress::-moz-progress-bar {
   border: none;
   backdrop-filter: blur(10px);
   background: rgb(85, 85, 85) !important;
 }
 
-.progress .p1::-moz-progress-bar {
+.progress::-moz-progress-value {
   background-color: #00d0ff !important;
-}  
- 
+}
 
 .cont-Data {
   display: flex;
@@ -110,10 +103,6 @@
   align-items: center;
   text-align: center;
 }
-
-
-
-
 
 @media (max-width: 400px) {
   .modal-Cont {

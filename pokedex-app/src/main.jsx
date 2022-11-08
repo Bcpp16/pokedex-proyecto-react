@@ -1,12 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
+// ============ IMPORT ROUTE ===============
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.css";
-import App from "./components/routes/App";
-import Description from "./components/routes/detail/Description";
+
+// ============ IMPORT COMPONENTS ===============
+import App from "./App";
+import Description from "./components/detail/Description";
 import Home from "./components/home/Home";
 import ErrorPage from "./components/error/ErrorPage";
+
+// ============ IMPORT STYLE ===============
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
+
 
 
 const router = createBrowserRouter([

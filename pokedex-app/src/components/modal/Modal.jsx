@@ -1,10 +1,12 @@
 import React, { useEffect, useState} from "react";
+
 import { useParams,} from "react-router-dom";
+
+// ============ IMPORTS COMPONENTS ===============
 import Modal from "react-bootstrap/Modal";
 import { FaRulerVertical } from "react-icons/fa";
 import { GiWeight } from "react-icons/gi";
 import { MdOutlineCatchingPokemon } from "react-icons/md";
-// import pokemones from "../../data";
 import "./modal.css";
 
 
@@ -24,8 +26,12 @@ const [pokemones, setPokemones] = useState ([]);
       alert(error);
     });
   }, []);
+
+
   const { id } = useParams();
   const pokemon = pokemones?.find((element) => {
+
+    
     return element.id == id;
   });
   
@@ -38,18 +44,20 @@ const [pokemones, setPokemones] = useState ([]);
       className="rounded-4"
     >
       <Modal.Header className="border-0 ">
-        <div className="prueba"></div>
-        <button className="close-Btn" onClick={props.onHide}>
-          X
-        </button>
+        <div className="container-btn-close"></div>
+        <button className="close-Btn" onClick={props.onHide}>X</button>
       </Modal.Header>
 
       <Modal.Body>
+
+         {/* ARTICLE WITH MODAL INFORMATION */}
         <div className="modal-Cont">
-          <div className="cont-Info">
+          <article className="cont-Info">
+
             <img className="img-Poke img-Modal" src={`../${pokemon?.image}`} />
             <h1>{pokemon?.name}</h1>
-            <div className="cont-type">
+
+            <section className="cont-type">
               <div className="type1" style={{ backgroundColor: pokemon?.color }}>
                 {pokemon?.element.type1}
               </div>
@@ -59,8 +67,10 @@ const [pokemones, setPokemones] = useState ([]);
               >
                 {pokemon?.element.type2}
               </div>
-            </div>
+            </section>
             
+            {/* DATA HEIGHT WEIGHT MOVES */}
+
             <section className="cont-Data">
 
               <div className="weight-height">
@@ -79,17 +89,16 @@ const [pokemones, setPokemones] = useState ([]);
 
               <div className="moves">
                 <MdOutlineCatchingPokemon />
-
                 <span>MOVES</span>
                 {pokemon?.moves}
               </div>
+
             </section>
-          </div>
+          </article>
 
+          {/* SECTION PROGRESS BAR */}
 
-          <div className="cont-Stats">
-
-            
+          <section className="cont-Stats">
 
             <label for="ATK">ATK</label>
             <progress id="ATK" className="progress" label={pokemon?.baseStats.ATK} max="200" value={pokemon?.baseStats.ATK} />
@@ -109,8 +118,8 @@ const [pokemones, setPokemones] = useState ([]);
             <label for="SPD">SPD</label>
             <progress id="SPD" className="progress" max="200" value={pokemon?.baseStats.SPD}/> 
 
-    
-          </div>
+          </section>
+
         </div>
       </Modal.Body>
     </Modal>
