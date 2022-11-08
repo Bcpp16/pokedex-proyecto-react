@@ -6,15 +6,21 @@ import "./index.css";
 import App from "./components/routes/App";
 import Description from "./components/routes/detail/Description";
 import Home from "./components/home/Home";
-import ErrorPage from "./components/error/ErrorPage";
 
 
 const router = createBrowserRouter([
+  
   {
     path: "/",
     element: <Home />,
-    errorElement: <ErrorPage/>,
   },
+
+  // {
+  //   path: "*",
+  //   element: <ErrorPage/>,
+  //   errorElement: <ErrorPage/>, 
+  // },
+  
   {
     path: "app",
     element: <App />,
@@ -23,7 +29,8 @@ const router = createBrowserRouter([
     path: "pokemon/:id", 
     element: <Description />,
   },
- 
+
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
