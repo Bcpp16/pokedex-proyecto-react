@@ -1,10 +1,7 @@
 .cont-home {
   width: 80vw;
   margin: 0 auto;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
   height: 0rem;
-  
 }
 
 .container-home {
@@ -15,7 +12,7 @@
 .header-home {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 
 .cont-logo-home {
@@ -54,7 +51,7 @@
   margin-top: 10rem;
 }
 
-.txt-welcome{
+.txt-welcome {
   font-size: 16px;
 }
 
@@ -75,15 +72,45 @@ a {
   margin-top: 2rem;
 }
 
-
-.cont-footer-home{
+.cont-footer-home {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 40rem;
 }
 
-.link-names{
+.link-names {
   margin-left: 7rem;
   color: #fff;
+}
+
+@media (max-width: 400px) {
+  .cont-home {
+    width: 100%;
+    height: 75vh;
+  }
+  .header-home {
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 20%;
+  }
+  .cont-logo-home {
+    margin: 0;
+    margin-top: 5rem;
+  }
+  .container-btn-back {
+    height: 60%;
+  }
+  .cont-footer-home {
+    height: 30%;
+    margin-top: 5px;
+    display: flex;
+    align-items: flex-end;
+
+    gap: 3rem;
+  }
+  .link-names {
+    margin-left: 0;
+    gap: 10px;
+  }
 }

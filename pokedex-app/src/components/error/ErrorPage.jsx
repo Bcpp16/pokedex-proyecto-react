@@ -6,10 +6,13 @@ function ErrorPage() {
   return (
     <div className="cont">
       <div className="error404">
-        <h1 className="sorry">SORRY</h1>
-        <h2>404</h2>
-        <div>
-          <img src="https://img.imgur.com/oqIKUNP.png" alt="poke" />
+        <div className="sorry-cont">
+          <h1 className="sorry">SORRY</h1>
+        </div>
+        <div className="cont-error-img">
+          <h2>4</h2>
+          <img className="img-error" src="/public/assets/Pokebola.png" />
+          <h2>4</h2>
         </div>
 
         <h3>Page not found</h3>

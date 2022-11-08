@@ -26,14 +26,40 @@
   box-shadow: 0 8px 32px 0 rgba(25, 37, 202, 0.2);
   width: 30vw;
 }
+.sorry-cont {
+  text-align: center;
+}
 .sorry {
   font-size: 5rem;
   color: #ff0000;
   letter-spacing: 3rem;
+  display: flex;
+  margin-left: 4rem;
 }
 
 h3 {
   font-size: 3rem;
   letter-spacing: 0.5rem;
 }
+.cont-error-img {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  align-items: center;
+}
+.cont-error-img h2 {
+  font-size: 10rem;
+}
+.img-error {
+  width: 10rem;
+  height: 10rem;
+}
 
+@media (max-width: 400px) {
+  .error404 {
+    width: 100%;
+  }
+  .btn-back-error {
+    width: 100%;
+  }
+}

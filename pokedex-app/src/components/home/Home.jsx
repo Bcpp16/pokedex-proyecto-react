@@ -26,21 +26,39 @@ function Home() {
           </div>
         </div>
         <div className="container-btn-back">
-          <h2 className="txt-welcome">Welcome to the react integrator project</h2>
+          <h2 className="txt-welcome">
+            Welcome to the react integrator project
+          </h2>
           <Link to={"/app"}>
             <button className="btn-back-home">GO TO THE POKÉDEX</button>
           </Link>
         </div>
 
         <div className="cont-footer-home">
-          <a className="link-names" href="https://github.com/ArianOC" target="_blank">Arian Ortiz</a>
+          <a
+            className="link-names"
+            href="https://github.com/ArianOC"
+            target="_blank"
+          >
+            Arian Ortiz
+          </a>
 
-          <a className="link-names" href="https://github.com/Bcpp16" target="_blank">Bruna Ceppa</a>
+          <a
+            className="link-names"
+            href="https://github.com/Bcpp16"
+            target="_blank"
+          >
+            Bruna Ceppa
+          </a>
 
-          <a className="link-names" href="https://github.com/Franro212" target="_blank">Franco Rossi</a>
-         </div>
-
-
+          <a
+            className="link-names"
+            href="https://github.com/Franro212"
+            target="_blank"
+          >
+            Franco Rossi
+          </a>
+        </div>
       </div>
     </>
   );
