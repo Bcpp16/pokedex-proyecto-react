@@ -10,13 +10,9 @@ import ErrorPage from "./components/Error-page";
 
 
 const router = createBrowserRouter([
+  
   {
     path: "/",
-    element: <ErrorPage/>,
-    errorElement: <ErrorPage/>, 
-  },
-  {
-    path: "home",
     element: <Home />,
   },
   
@@ -27,6 +23,12 @@ const router = createBrowserRouter([
   {
     path: "pokemon/:id", 
     element: <Description />,
+  },
+
+  {
+    path: "*",
+    element: <ErrorPage/>,
+    errorElement: <ErrorPage/>, 
   },
 ]);
 
