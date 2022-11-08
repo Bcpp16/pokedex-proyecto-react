@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import React from "react";
+import { HiArrowLongLeft } from "react-icons/hi2";
 import "./header.css";
 
 
@@ -12,7 +14,7 @@ function Header({
 }) {
   const [showButton, setShowButton] = useState(true);
 
-  
+  const navigate = useNavigate();
 
   const onChangeInput = (e) => {
     let textInput = e.target.value.toLowerCase();
@@ -48,11 +50,13 @@ function Header({
 
   return (   
     <div className="cont1">
+          <button className="btn-home" onClick={() => navigate("/")}><HiArrowLongLeft/></button>
       <div className="cont-header">
+         
+          
         <div className="cont-logo">
           <img className="img-logo" src="/public/assets/Pokebola.png" />
           <span className="txt-logo">Pokédex</span>
-          
         </div>
         <div className="cont-search">
           <input

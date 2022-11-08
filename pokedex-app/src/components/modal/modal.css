@@ -1,12 +1,12 @@
 .modal-content {
   height: auto;
   max-height: auto;
-  background: rgba(41, 41, 41, 0.45) !important;
-  /* box-shadow: 0 8px 32px 0 rgb(0, 0, 0); */
+  background: rgba(68, 68, 68, 0.45) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  
 }
 .modal-Cont {
   width: 100%;
@@ -17,6 +17,7 @@
   flex-direction: column;
   width: 60%;
 }
+
 
 .cont-Info {
   width: 40%;
@@ -51,15 +52,41 @@
   justify-content: center;
 
   background-color: transparent;
-  backdrop-filter: blur(px);
+  backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.18);
 }
 
-.progress {
+
+ .progress {
   width: 100%;
   border: none;
-  border-radius: 10px;
+  border-radius: 1rem;
+  box-shadow: none;
 }
+
+
+ .progress::-webkit-progress-bar {
+  border: none;
+  backdrop-filter: blur(10px);
+  background: rgb(85, 85, 85) !important;
+}
+
+.progress::-webkit-progress-value {
+  background-color: #00d0ff !important;
+}
+
+
+
+.progress {
+  border: none;
+  backdrop-filter: blur(10px);
+  background: rgb(85, 85, 85) !important;
+}
+
+.progress .p1::-moz-progress-bar {
+  background-color: #00d0ff !important;
+}  
+ 
 
 .cont-Data {
   display: flex;
@@ -83,6 +110,10 @@
   align-items: center;
   text-align: center;
 }
+
+
+
+
 
 @media (max-width: 400px) {
   .modal-Cont {

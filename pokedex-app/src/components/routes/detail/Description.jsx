@@ -43,7 +43,7 @@ function Description() {
       </div>
 
       <div className="cont-BackBtn">
-        <Link to={"/"}>
+        <Link to={"/app"}>
           <button className="back-Btn">
             <HiArrowLeft /> VOLVER
           </button>

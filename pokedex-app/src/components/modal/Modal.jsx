@@ -7,11 +7,13 @@ import { MdOutlineCatchingPokemon } from "react-icons/md";
 import pokemones from "../../data";
 import "./modal.css";
 
+
 export default function ModalStates(props) {
   const { id } = useParams();
   const pokemon = pokemones.find((element) => {
     return element.id == id;
   });
+  
   return (
     <Modal
       {...props}
@@ -26,6 +28,7 @@ export default function ModalStates(props) {
           X
         </button>
       </Modal.Header>
+
       <Modal.Body>
         <div className="modal-Cont">
           <div className="cont-Info">
@@ -42,71 +45,56 @@ export default function ModalStates(props) {
                 {pokemon.element.type2}
               </div>
             </div>
-            <div className="cont-Data">
+            
+            <section className="cont-Data">
+
               <div className="weight-height">
                 <div className="weight">
                   <GiWeight />
                   {pokemon.weight} <br />
                   <span>WEIGHT</span>
                 </div>
+
                 <div className="height">
                   <FaRulerVertical />
                   {pokemon.height} <br />
                   <span>HEIGHT</span>
                 </div>
               </div>
+
               <div className="moves">
                 <MdOutlineCatchingPokemon />
 
                 <span>MOVES</span>
                 {pokemon.moves}
               </div>
-            </div>
+            </section>
           </div>
 
+
           <div className="cont-Stats">
+
+            
+
             <label for="ATK">ATK</label>
-            <progress
-              id="ATK"
-              className="progress"
-              max="200"
-              value={pokemon.baseStats.ATK}
-            ></progress>
+            <progress id="ATK" className="progress" label={pokemon.baseStats.ATK} max="200" value={pokemon.baseStats.ATK} />
+
             <label for="DEF">DEF</label>
-            <progress
-              id="DEF"
-              className="progress"
-              max="200"
-              value={pokemon.baseStats.DEF}
-            ></progress>
+            <progress id="DEF" className="progress" max="200" value={pokemon.baseStats.DEF}/>
+
             <label for="HP">HP</label>
-            <progress
-              id="HP"
-              className="progress"
-              max="200"
-              value={pokemon.baseStats.HP}
-            ></progress>
+            <progress id="HP" className="progress" max="200" value={pokemon.baseStats.HP}/>
+
             <label for="SATK">SATK</label>
-            <progress
-              id="SATK"
-              className="progress"
-              max="200"
-              value={pokemon.baseStats.SATK}
-            ></progress>
+            <progress id="SATK" className="progress"  max="200"value={pokemon.baseStats.SATK}/>
+
             <label for="SDEF">SDEF</label>
-            <progress
-              id="SDEF"
-              className="progress"
-              max="200"
-              value={pokemon.baseStats.SDEF}
-            ></progress>
+            <progress id="SDEF" className="progress" max="200" value={pokemon.baseStats.SDEF}/>
+
             <label for="SPD">SPD</label>
-            <progress
-              id="SPD"
-              className="progress"
-              max="200"
-              value={pokemon.baseStats.SPD}
-            ></progress>
+            <progress id="SPD" className="progress" max="200" value={pokemon.baseStats.SPD}/> 
+
+    
           </div>
         </div>
       </Modal.Body>
