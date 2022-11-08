@@ -1,19 +1,35 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams} from "react-router-dom";
 import "./description.css";
-import pokemones from "../../../data";
-import { useState } from "react";
+// import pokemones from "../../../data";
+import { useEffect, useState } from "react";
 import ModalStates from "../../modal/Modal";
 import { HiArrowLeft, HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
 function Description() {
   const [modalShow, setModalShow] = useState(false);
+  const [pokemones, setPokemones] = useState ([]);
+
+  useEffect(()=>{
+    fetch("http://localhost:3000/pokemones",{
+      method:"GET",
+      headers: {"Content-Type": "application/json"},
+    })
+    .then((response)=> response.json())
+    .then((data) => {
+      setPokemones(data);
+    })
+    .catch((error)=>{
+      alert(error);
+    });
+  }, []);
+
 
   const { id } = useParams();
-  const pokemon = pokemones.find((element) => {
+  const pokemon = pokemones?.find((element) => {
     return element.id == id;
   });
 
-  const indexActual = pokemones.findIndex((element) => {
+  const indexActual = pokemones?.findIndex((element) => {
     return element.id == id;
   });
 
@@ -21,7 +37,7 @@ function Description() {
     <div
       className="container-descr"
       style={{
-        backgroundImage: `linear-gradient(to right, ${pokemon.color}, ${pokemon.bgColor})`,
+        backgroundImage: `linear-gradient(to right, ${pokemon?.color}, ${pokemon?.bgColor})`,
       }}
     >
       <div className="link-c-1">
@@ -45,37 +61,37 @@ function Description() {
       <div className="cont-BackBtn">
         <Link to={"/app"}>
           <button className="back-Btn">
-            <HiArrowLeft /> VOLVER
+            <HiArrowLeft /> GO BACK
           </button>
         </Link>
       </div>
       <div className="cont-second">
         <div className="cont-img">
-          <img className="img-big" src={`../${pokemon.image}`} alt="pokemon" />
+          <img className="img-big" src={`../${pokemon?.image}`} alt="pokemon" />
         </div>
 
         <div className="cont-basic">
-          <span className="id-desc">{`# ${pokemon.id}`}</span>
+          <span className="id-desc">{`# ${pokemon?.id}`}</span>
 
           <div className="cont-type">
-            <div className="type1" style={{ backgroundColor: pokemon.color }}>
-              {pokemon.element.type1}
+            <div className="type1" style={{ backgroundColor: pokemon?.color }}>
+              {pokemon?.element.type1}
             </div>
             <div
               className="type2"
-              style={{ backgroundColor: pokemon.element.color2 }}
+              style={{ backgroundColor: pokemon?.element.color2 }}
             >
-              {pokemon.element.type2}
+              {pokemon?.element.type2}
             </div>
           </div>
 
-          <h2 className="title-name">{pokemon.name.toLocaleUpperCase()}</h2>
-          <p className="txt-desc">{pokemon.description}</p>
+          <h2 className="title-name">{pokemon?.name.toLocaleUpperCase()}</h2>
+          <p className="txt-desc">{pokemon?.description}</p>
           <button
             variant="primary"
             onClick={() => setModalShow(true)}
             ba
-            style={{ color: pokemon.color }}
+            style={{ color: pokemon?.color }}
             className="btn-states"
           >
             Base states

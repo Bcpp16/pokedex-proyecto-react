@@ -1,17 +1,24 @@
-.container-home {
+.cont-home {
+  width: 80vw;
+  margin: 0 auto;
   background-color: transparent;
   backdrop-filter: blur(10px);
+  height: 0rem;
+}
+
+.container-home {
   height: 100vh;
   position: relative;
   z-index: 1;
 }
 .header-home {
-  height: 15rem;
-  box-shadow: 0 8px 20px 0 rgba(30, 37, 138, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
 }
 
 .cont-logo-home {
-  margin: 10rem 20rem;
+  margin: 10rem;
 }
 
 .img-logo-home {
@@ -31,17 +38,27 @@
   margin: 15px;
 }
 
+.cont-icon{
+  margin-right: 20rem;
+  z-index: 1;
+
+}
+
 .icon-git {
-  display: flex;
-  justify-content: flex-end;
   color: #fff;
   font-size: 3rem;
 }
 
 .container-btn-back {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 10rem;
+}
+
+.txt-welcome{
+  font-size: 16px;
 }
 
 a {
@@ -58,5 +75,18 @@ a {
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(25, 37, 202, 0.2);
-  margin-top: 30rem;
+  margin-top: 2rem;
+}
+
+
+.cont-footer-home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40rem;
+}
+
+.link-names{
+  margin-left: 7rem;
+  color: #fff;
 }

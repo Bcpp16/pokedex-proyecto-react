@@ -62,7 +62,7 @@ function Header({
           <input
             type="search"
             className="search"
-            placeholder="Buscar"
+            placeholder="Search for Pokemon"
             onChange={onChangeInput}
           />
 

@@ -26,7 +26,7 @@ function Main({ listPokemones }) {
             );
           })
         ) : (
-          <p className="txt-main">No se han encontrado Pokemones</p>
+          <p className="txt-main">No Pokemon found</p>
         )}
       </div>
       <div className="footer"></div>
