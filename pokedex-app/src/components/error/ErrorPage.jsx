@@ -11,6 +11,7 @@ function ErrorPage() {
         <div>
           <img src="https://img.imgur.com/oqIKUNP.png" alt="poke" />
         </div>
+
         <h3>Page not found</h3>
         <Link to={"/app"}>
           <button className="btn-back-error">Back Home</button>
