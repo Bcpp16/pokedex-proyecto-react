@@ -6,8 +6,9 @@
   z-index: 1;
 }
 .header-home {
-  height: 15rem;
-  box-shadow: 0 8px 20px 0 rgba(30, 37, 138, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
 }
 
 .cont-logo-home {
@@ -31,9 +32,14 @@
   margin: 15px;
 }
 
+
+.cont-icon{
+  margin-right: 20rem;
+  z-index: 1;
+
+}
+
 .icon-git {
-  display: flex;
-  justify-content: flex-end;
   color: #fff;
   font-size: 3rem;
 }

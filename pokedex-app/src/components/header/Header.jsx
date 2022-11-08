@@ -50,7 +50,7 @@ function Header({
 
   return (   
     <div className="cont1">
-          <button className="btn-home" onClick={() => navigate("/")}><HiArrowLongLeft/></button>
+          <button className="btn-home" onClick={() => navigate("/home")}><HiArrowLongLeft/></button>
       <div className="cont-header">
          
           
