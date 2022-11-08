@@ -4,6 +4,7 @@
   background-color: transparent;
   backdrop-filter: blur(10px);
   height: 0rem;
+  
 }
 
 .container-home {
@@ -12,8 +13,9 @@
   z-index: 1;
 }
 .header-home {
-  height: 15rem;
-  box-shadow: 0 8px 20px 0 rgba(30, 37, 138, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
 }
 
 .cont-logo-home {
