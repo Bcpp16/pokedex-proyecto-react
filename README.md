@@ -1,7 +1,7 @@
 # Pokédex - Proyecto Integrados React.js
 
 ## Vistas Finales:
-
+![pokedex](https://user-images.githubusercontent.com/87783719/208254800-64189393-b145-4485-b4e5-c7956b882453.gif)
 ![Screenshot 2022-11-08 at 15-28-26 Pokedex](https://user-images.githubusercontent.com/87783719/200646325-70ff745a-4dd7-49e3-ad78-35755e4f3a04.png)
 ![Screenshot 2022-11-08 153027](https://user-images.githubusercontent.com/87783719/200647291-baf17b93-84cd-4349-90f2-827cb4a6d9ba.png)
 ![Screenshot 2022-11-08 153114](https://user-images.githubusercontent.com/87783719/200647293-74fe951b-e169-4376-bb89-5b66eb35dea7.png)
